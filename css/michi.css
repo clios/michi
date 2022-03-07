@@ -1,0 +1,631 @@
+@charset "UTF-8";
+/* Document
+ * ========================================================================== */
+/**
+ * 1. Add border box sizing in all browsers (opinionated).
+ * 2. Backgrounds do not repeat by default (opinionated).
+ */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  /* 1 */
+  background-repeat: no-repeat;
+  /* 2 */
+}
+
+/**
+ * 1. Add text decoration inheritance in all browsers (opinionated).
+ * 2. Add vertical alignment inheritance in all browsers (opinionated).
+ */
+::before,
+::after {
+  text-decoration: inherit;
+  /* 1 */
+  vertical-align: inherit;
+  /* 2 */
+}
+
+/**
+ * 1. Use the default cursor in all browsers (opinionated).
+ * 2. Change the line height in all browsers (opinionated).
+ * 3. Breaks words to prevent overflow in all browsers (opinionated).
+ * 4. Use a 4-space tab width in all browsers (opinionated).
+ * 5. Remove the grey highlight on links in iOS (opinionated).
+ * 6. Prevent adjustments of font size after orientation changes in iOS.
+ */
+:where(:root) {
+  cursor: default;
+  /* 1 */
+  line-height: 1.5;
+  /* 2 */
+  overflow-wrap: break-word;
+  /* 3 */
+  -moz-tab-size: 4;
+  /* 4 */
+  tab-size: 4;
+  /* 4 */
+  -webkit-tap-highlight-color: transparent;
+  /* 5 */
+  -webkit-text-size-adjust: 100%;
+  /* 6 */
+  text-size-adjust: 100%;
+  /* 6 */
+}
+
+/* Sections
+ * ========================================================================== */
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+:where(body) {
+  margin: 0;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Edge, Firefox, and Safari.
+ */
+:where(h1) {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+ * ========================================================================== */
+/**
+ * Remove the margin on nested lists in Chrome, Edge, and Safari.
+ */
+:where(dl, ol, ul) :where(dl, ol, ul) {
+  margin: 0;
+}
+
+/**
+ * 1. Correct the inheritance of border color in Firefox.
+ * 2. Add the correct box sizing in Firefox.
+ */
+:where(hr) {
+  color: inherit;
+  /* 1 */
+  height: 0;
+  /* 2 */
+}
+
+/**
+ * Remove the list style on navigation lists in all browsers (opinionated).
+ */
+:where(nav) :where(ol, ul) {
+  list-style-type: none;
+  padding: 0;
+}
+
+/**
+ * Prevent VoiceOver from ignoring list semantics in Safari (opinionated).
+ */
+:where(nav li)::before {
+  content: "​";
+  float: left;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ * 3. Prevent overflow of the container in all browsers (opinionated).
+ */
+:where(pre) {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+  overflow: auto;
+  /* 3 */
+}
+
+/* Text-level semantics
+ * ========================================================================== */
+/**
+ * Add the correct text decoration in Safari.
+ */
+:where(abbr[title]) {
+  text-decoration: underline;
+  text-decoration: underline dotted;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+:where(b, strong) {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+:where(code, kbd, samp) {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+:where(small) {
+  font-size: 80%;
+}
+
+/* Embedded content
+ * ========================================================================== */
+/*
+ * Change the alignment on media elements in all browsers (opinionated).
+ */
+:where(audio, canvas, iframe, img, svg, video) {
+  vertical-align: middle;
+}
+
+/**
+ * Remove the border on iframes in all browsers (opinionated).
+ */
+:where(iframe) {
+  border-style: none;
+}
+
+/**
+ * Change the fill color to match the text color in all browsers (opinionated).
+ */
+:where(svg:not([fill])) {
+  fill: currentColor;
+}
+
+/* Tabular data
+ * ========================================================================== */
+/**
+ * 1. Collapse border spacing in all browsers (opinionated).
+ * 2. Correct table border color in Chrome, Edge, and Safari.
+ * 3. Remove text indentation from table contents in Chrome, Edge, and Safari.
+ */
+:where(table) {
+  border-collapse: collapse;
+  /* 1 */
+  border-color: currentColor;
+  /* 2 */
+  text-indent: 0;
+  /* 3 */
+}
+
+/* Forms
+ * ========================================================================== */
+/**
+ * Remove the margin on controls in Safari.
+ */
+:where(button, input, select) {
+  margin: 0;
+}
+
+/**
+ * Correct the inability to style buttons in iOS and Safari.
+ */
+:where(button, [type="button" i], [type="reset" i], [type="submit" i]) {
+  -webkit-appearance: button;
+}
+
+/**
+ * Change the inconsistent appearance in all browsers (opinionated).
+ */
+:where(fieldset) {
+  border: 1px solid #a0a0a0;
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Edge, and Firefox.
+ */
+:where(progress) {
+  vertical-align: baseline;
+}
+
+/**
+ * 1. Remove the margin in Firefox and Safari.
+ * 3. Change the resize direction in all browsers (opinionated).
+ */
+:where(textarea) {
+  margin: 0;
+  /* 1 */
+  resize: vertical;
+  /* 3 */
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome, Edge, and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+:where([type="search" i]) {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Safari.
+ */
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * Correct the text style of placeholders in Chrome, Edge, and Safari.
+ */
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.54;
+}
+
+/**
+ * Remove the inner padding in Chrome, Edge, and Safari on macOS.
+ */
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style upload buttons in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+ * ========================================================================== */
+/*
+ * Add the correct styles in Safari.
+ */
+:where(dialog) {
+  background-color: white;
+  border: solid;
+  color: black;
+  height: -moz-fit-content;
+  height: fit-content;
+  left: 0;
+  margin: auto;
+  padding: 1em;
+  position: absolute;
+  right: 0;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+:where(dialog:not([open])) {
+  display: none;
+}
+
+/*
+ * Add the correct display in Safari.
+ */
+:where(details > summary:first-of-type) {
+  display: list-item;
+}
+
+/* Accessibility
+ * ========================================================================== */
+/**
+ * Change the cursor on busy elements in all browsers (opinionated).
+ */
+:where([aria-busy="true" i]) {
+  cursor: progress;
+}
+
+/*
+ * Change the cursor on disabled, not-editable, or otherwise
+ * inoperable elements in all browsers (opinionated).
+ */
+:where([aria-disabled="true" i], [disabled]) {
+  cursor: not-allowed;
+}
+
+/*
+ * Change the display on visually hidden accessible elements
+ * in all browsers (opinionated).
+ */
+:where([aria-hidden="false" i][hidden]) {
+  display: initial;
+}
+
+:where([aria-hidden="false" i][hidden]:not(:focus)) {
+  clip: rect(0, 0, 0, 0);
+  position: absolute;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Oxygen", "Fira Sans", "Roboto", "Droid Sans", "Helvetica", "Arial", sans-serif;
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.button {
+  padding: 0.3em 1.2em;
+  outline: none;
+  border: 0.15rem solid #20a9df;
+  background-color: #20a9df;
+  color: black;
+  font-size: 0.8rem;
+  font-weight: 300;
+  transition: all 100ms ease;
+  cursor: pointer;
+}
+.button:hover, .button:focus {
+  border: 0.15rem solid #63c3e9;
+  background-color: #63c3e9;
+}
+.button:active {
+  border: 0.15rem solid #1a87b3;
+  background-color: #1a87b3;
+  color: white;
+}
+
+.button.is-white {
+  border: 0.15rem solid white;
+  background-color: white;
+  color: black;
+}
+.button.is-white:hover, .button.is-white:focus {
+  border: 0.15rem solid white;
+  background-color: white;
+  color: black;
+}
+.button.is-white:active {
+  border: 0.15rem solid #e6e6e6;
+  background-color: #e6e6e6;
+  color: black;
+}
+
+.button.is-gray {
+  border: 0.15rem solid #333333;
+  background-color: #333333;
+  color: white;
+}
+.button.is-gray:hover, .button.is-gray:focus {
+  border: 0.15rem solid #595959;
+  background-color: #595959;
+  color: white;
+}
+.button.is-gray:active {
+  border: 0.15rem solid #1a1a1a;
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.button.is-small {
+  font-size: 0.7rem;
+}
+
+.button.is-large {
+  font-size: 1.1rem;
+}
+
+.button.is-outline {
+  background-color: rgba(0, 0, 0, 0);
+  color: #20a9df;
+}
+.button.is-outline:hover, .button.is-outline:focus {
+  background-color: #262626;
+  color: #63c3e9;
+}
+.button.is-outline:active {
+  background-color: #262626;
+  color: #16769c;
+}
+
+.button.is-icon {
+  margin: 0;
+  padding: 0.3em;
+}
+
+.table {
+  background-color: #262626;
+  border-collapse: collapse;
+}
+.table th,
+.table td {
+  padding: 0.5rem 1.3rem;
+}
+
+.title-1 {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  font-size: 5rem;
+  line-height: 5rem;
+}
+
+.title-2 {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  font-size: 4rem;
+  line-height: 4rem;
+}
+
+.title-3 {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
+.title-4 {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+.title-5 {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 1rem;
+}
+
+.subtitle-1 {
+  margin: 0;
+  padding: 0;
+  font-weight: 100;
+  font-size: 5rem;
+  line-height: 5rem;
+}
+
+.subtitle-2 {
+  margin: 0;
+  padding: 0;
+  font-weight: 100;
+  font-size: 4rem;
+  line-height: 4rem;
+}
+
+.subtitle-3 {
+  margin: 0;
+  padding: 0;
+  font-weight: 100;
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
+.subtitle-4 {
+  margin: 0;
+  padding: 0;
+  font-weight: 100;
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+.subtitle-5 {
+  margin: 0;
+  padding: 0;
+  font-weight: 100;
+  font-size: 1rem;
+  line-height: 1rem;
+}
+
+.input {
+  padding: 0.4rem 0.7rem;
+  border: 1px solid gray;
+  background-color: gray;
+  color: white;
+  outline: none;
+  transition: all 200ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+}
+.input:focus {
+  border: 1px solid gray;
+  background-color: #e9f6fc;
+  color: #1a1a1a;
+  transition: all 200ms ease;
+}
+
+.textarea {
+  padding: 0.4rem 0.7rem;
+  border: 1px solid gray;
+  background-color: gray;
+  color: white;
+  outline: none;
+  transition: all 200ms ease;
+  font-family: "Oxygen", "Fira Sans", "Roboto", "Droid Sans", "Helvetica", "Arial", sans-serif;
+  font-size: 0.8rem;
+}
+.textarea:focus {
+  border: 1px solid gray;
+  background-color: #e9f6fc;
+  color: #1a1a1a;
+  transition: all 200ms ease;
+}
+
+.select {
+  position: relative;
+  width: min-content;
+}
+.select::after {
+  content: "";
+  position: absolute;
+  top: 0.6rem;
+  right: 0.8rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-width: 0 2px 2px 0;
+  border-color: white;
+  border-style: solid;
+  transform: rotate(45deg);
+  pointer-events: none;
+}
+
+select {
+  display: block;
+  padding: 0.4rem 50px 0.4rem 10px;
+  border: 1px solid gray;
+  background-color: gray;
+  color: white;
+  outline: none;
+  appearance: none;
+  cursor: pointer;
+}
+select:focus {
+  border: 1px solid #20a9df;
+  background-color: #e9f6fc;
+  color: #1a1a1a;
+  transition: all 200ms ease;
+}
+
+label.checkbox {
+  padding: 0.4rem 0.7rem;
+  font-size: 0.9rem;
+  border: 1px solid gray;
+  background-color: gray;
+  color: white;
+  outline: none;
+  transition: all 200ms ease;
+}
+label.checkbox:focus {
+  border: 1px solid gray;
+  background-color: #e9f6fc;
+  color: #1a1a1a;
+  transition: all 200ms ease;
+}
+
+input.checkbox {
+  outline: none;
+}
+
+label.radio {
+  padding: 0.4rem 0.7rem;
+  font-size: 0.9rem;
+  border: 1px solid gray;
+  background-color: gray;
+  color: white;
+  outline: none;
+  transition: all 200ms ease;
+}
+label.radio:focus {
+  border: 1px solid gray;
+  background-color: #e9f6fc;
+  color: #1a1a1a;
+  transition: all 200ms ease;
+}
+
+input.radio {
+  outline: none;
+}

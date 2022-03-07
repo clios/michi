@@ -1,0 +1,36 @@
+// _color-contrast.scss  | gist.github.com/regnskygge/4b3a97b56f173f4c787bd2f0095f6efc
+
+@use 'sass:math';
+
+$dark-text-default: hsl(0, 0%, 0%) !default;
+$light-text-default: hsl(0, 0%, 100%) !default;
+
+// Calculate brightness of a given color.
+@function brightness($color) {
+  @return math.div(
+    (red($color) * 0.299) + (green($color) * 0.587) + (blue($color) * 0.114),
+    255
+  );
+}
+
+// Compares contrast of a given color to the light/dark arguments and returns whichever is most "contrasty"
+@function color-contrast(
+  $color,
+  $dark: $dark-text-default,
+  $light: $light-text-default
+) {
+  @if $color == null {
+    @return null;
+  } @else {
+    $color-brightness: brightness($color);
+    $light-text-brightness: brightness($light);
+    $dark-text-brightness: brightness($dark);
+
+    @return if(
+      abs($color-brightness - $light-text-brightness) >
+        abs($color-brightness - $dark-text-brightness),
+      $light,
+      $dark
+    );
+  }
+}

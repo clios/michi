@@ -1,0 +1,90 @@
+@use 'sass:color';
+
+.button {
+  padding: 0.3em 1.2em;
+  outline: none;
+  border: 0.15rem solid $primary;
+  background-color: $primary;
+  color: color-contrast($primary);
+  font-size: 0.8rem;
+  font-weight: 300;
+  transition: all 100ms ease;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    border: 0.15rem solid lighten($primary, 15%);
+    background-color: lighten($primary, 15%);
+  }
+  &:active {
+    border: 0.15rem solid darken($primary, 10%);
+    background-color: darken($primary, 10%);
+    color: color-contrast(darken($primary, 10%));
+  }
+}
+
+// Colors
+
+.button.is-white {
+  border: 0.15rem solid $white;
+  background-color: $white;
+  color: color-contrast($white);
+  &:hover,
+  &:focus {
+    border: 0.15rem solid lighten($white, 15%);
+    background-color: lighten($white, 15%);
+    color: color-contrast(lighten($white, 15%));
+  }
+  &:active {
+    border: 0.15rem solid darken($white, 10%);
+    background-color: darken($white, 10%);
+    color: color-contrast(darken($white, 10%));
+  }
+}
+
+.button.is-gray {
+  border: 0.15rem solid $gray;
+  background-color: $gray;
+  color: color-contrast($gray);
+  &:hover,
+  &:focus {
+    border: 0.15rem solid lighten($gray, 15%);
+    background-color: lighten($gray, 15%);
+    color: color-contrast(lighten($gray, 15%));
+  }
+  &:active {
+    border: 0.15rem solid darken($gray, 10%);
+    background-color: darken($gray, 10%);
+    color: color-contrast(darken($gray, 10%));
+  }
+}
+
+// Sizes
+
+.button.is-small {
+  font-size: 0.7rem;
+}
+
+.button.is-large {
+  font-size: 1.1rem;
+}
+
+// State
+
+.button.is-outline {
+  background-color: hsla(0, 0%, 0%, 0);
+  color: $primary;
+  &:hover,
+  &:focus {
+    background-color: $dark;
+    color: lighten($primary, 15%);
+  }
+  &:active {
+    background-color: $dark;
+    color: darken($primary, 15%);
+  }
+}
+
+.button.is-icon {
+  margin: 0;
+  padding: 0.3em;
+}

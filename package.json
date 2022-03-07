@@ -1,0 +1,35 @@
+{
+  "name": "michi.css",
+  "version": "0.0.1",
+  "description": "A small CSS framework for simple user interfaces",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.49.8"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.2",
+    "cssnano": "^5.1.0",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-postcss": "^9.0.1",
+    "gulp-rename": "^2.0.0",
+    "postcss": "^8.4.7"
+  },
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clios/michi.git"
+  },
+  "keywords": [
+    "css",
+    "sass",
+    "framework"
+  ],
+  "author": "Cliemtor Fabros <clios1208@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/clios/michi/issues"
+  },
+  "homepage": "https://github.com/clios/michi#readme"
+}

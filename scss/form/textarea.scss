@@ -1,0 +1,17 @@
+.textarea {
+  padding: 0.4rem 0.7rem;
+  border: 1px solid $light-gray;
+  background-color: $light-gray;
+  color: $white;
+  outline: none;
+  transition: all 200ms ease;
+  font-family: 'Oxygen', 'Fira Sans', 'Roboto', 'Droid Sans', 'Helvetica',
+    'Arial', sans-serif;
+  font-size: 0.8rem;
+  &:focus {
+    border: 1px solid $light-gray;
+    background-color: lighten($primary, 45%);
+    color: $black;
+    transition: all 200ms ease;
+  }
+}

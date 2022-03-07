@@ -1,0 +1,10 @@
+.table {
+  background-color: $dark;
+  border-collapse: collapse;
+  tr {
+  }
+  th,
+  td {
+    padding: 0.5rem 1.3rem;
+  }
+}

@@ -1,0 +1,18 @@
+@use 'sass:color';
+
+.input {
+  padding: 0.4rem 0.7rem;
+  border: 1px solid $light-gray;
+  background-color: $light-gray;
+  color: $white;
+  outline: none;
+  transition: all 200ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+  &:focus {
+    border: 1px solid $light-gray;
+    background-color: lighten($primary, 45%);
+    color: $black;
+    transition: all 200ms ease;
+  }
+}

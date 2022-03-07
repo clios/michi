@@ -1,0 +1,21 @@
+@use 'sass:color';
+
+label.radio {
+  padding: 0.4rem 0.7rem;
+  font-size: 0.9rem;
+  border: 1px solid $light-gray;
+  background-color: $light-gray;
+  color: $white;
+  outline: none;
+  transition: all 200ms ease;
+  &:focus {
+    border: 1px solid $light-gray;
+    background-color: lighten($primary, 45%);
+    color: $black;
+    transition: all 200ms ease;
+  }
+}
+
+input.radio {
+  outline: none;
+}
