@@ -26,6 +26,4 @@ function cssminify() {
     .pipe(dest('css'))
 }
 
-exports.default = series(buildStyles, watchTask)
-
-exports.cssminify = cssminify
+exports.default = series(buildStyles, cssminify, watchTask)
