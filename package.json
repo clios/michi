@@ -1,6 +1,6 @@
 {
   "name": "michi.css",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A small CSS framework for simple user interfaces",
   "main": "index.js",
   "dependencies": {
