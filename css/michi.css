@@ -349,7 +349,7 @@
 
 body {
   font-family: "Oxygen", "Fira Sans", "Roboto", "Droid Sans", "Helvetica", "Arial", sans-serif;
-  background-color: #1a1a1a;
+  background-color: #171b1c;
   color: white;
 }
 
@@ -385,24 +385,24 @@ body {
   color: black;
 }
 .button.is-white:active {
-  border: 0.15rem solid #e6e6e6;
-  background-color: #e6e6e6;
+  border: 0.15rem solid #e3e7e8;
+  background-color: #e3e7e8;
   color: black;
 }
 
 .button.is-gray {
-  border: 0.15rem solid #333333;
-  background-color: #333333;
+  border: 0.15rem solid #2e3538;
+  background-color: #2e3538;
   color: white;
 }
 .button.is-gray:hover, .button.is-gray:focus {
-  border: 0.15rem solid #595959;
-  background-color: #595959;
+  border: 0.15rem solid #505d62;
+  background-color: #505d62;
   color: white;
 }
 .button.is-gray:active {
-  border: 0.15rem solid #1a1a1a;
-  background-color: #1a1a1a;
+  border: 0.15rem solid #171b1c;
+  background-color: #171b1c;
   color: white;
 }
 
@@ -419,11 +419,11 @@ body {
   color: #20a9df;
 }
 .button.is-outline:hover, .button.is-outline:focus {
-  background-color: #262626;
+  background-color: #22282a;
   color: #63c3e9;
 }
 .button.is-outline:active {
-  background-color: #262626;
+  background-color: #22282a;
   color: #16769c;
 }
 
@@ -433,7 +433,7 @@ body {
 }
 
 .table {
-  background-color: #262626;
+  background-color: #22282a;
   border-collapse: collapse;
 }
 .table th,
@@ -523,8 +523,8 @@ body {
 
 .input {
   padding: 0.4rem 0.7rem;
-  border: 1px solid gray;
-  background-color: gray;
+  border: 1px solid #73858c;
+  background-color: #73858c;
   color: white;
   outline: none;
   transition: all 200ms ease;
@@ -532,16 +532,16 @@ body {
   -moz-appearance: textfield;
 }
 .input:focus {
-  border: 1px solid gray;
+  border: 1px solid #73858c;
   background-color: #e9f6fc;
-  color: #1a1a1a;
+  color: #171b1c;
   transition: all 200ms ease;
 }
 
 .textarea {
   padding: 0.4rem 0.7rem;
-  border: 1px solid gray;
-  background-color: gray;
+  border: 1px solid #73858c;
+  background-color: #73858c;
   color: white;
   outline: none;
   transition: all 200ms ease;
@@ -549,9 +549,9 @@ body {
   font-size: 0.8rem;
 }
 .textarea:focus {
-  border: 1px solid gray;
+  border: 1px solid #73858c;
   background-color: #e9f6fc;
-  color: #1a1a1a;
+  color: #171b1c;
   transition: all 200ms ease;
 }
 
@@ -576,8 +576,8 @@ body {
 select {
   display: block;
   padding: 0.4rem 50px 0.4rem 10px;
-  border: 1px solid gray;
-  background-color: gray;
+  border: 1px solid #73858c;
+  background-color: #73858c;
   color: white;
   outline: none;
   appearance: none;
@@ -586,23 +586,23 @@ select {
 select:focus {
   border: 1px solid #20a9df;
   background-color: #e9f6fc;
-  color: #1a1a1a;
+  color: #171b1c;
   transition: all 200ms ease;
 }
 
 label.checkbox {
   padding: 0.4rem 0.7rem;
   font-size: 0.9rem;
-  border: 1px solid gray;
-  background-color: gray;
+  border: 1px solid #73858c;
+  background-color: #73858c;
   color: white;
   outline: none;
   transition: all 200ms ease;
 }
 label.checkbox:focus {
-  border: 1px solid gray;
+  border: 1px solid #73858c;
   background-color: #e9f6fc;
-  color: #1a1a1a;
+  color: #171b1c;
   transition: all 200ms ease;
 }
 
@@ -613,16 +613,16 @@ input.checkbox {
 label.radio {
   padding: 0.4rem 0.7rem;
   font-size: 0.9rem;
-  border: 1px solid gray;
-  background-color: gray;
+  border: 1px solid #73858c;
+  background-color: #73858c;
   color: white;
   outline: none;
   transition: all 200ms ease;
 }
 label.radio:focus {
-  border: 1px solid gray;
+  border: 1px solid #73858c;
   background-color: #e9f6fc;
-  color: #1a1a1a;
+  color: #171b1c;
   transition: all 200ms ease;
 }
 
@@ -655,23 +655,23 @@ input.radio {
 }
 
 .text-light {
-  color: #e6e6e6;
+  color: #e3e7e8;
 }
 
 .text-light-gray {
-  color: gray;
+  color: #73858c;
 }
 
 .text-gray {
-  color: #333333;
+  color: #2e3538;
 }
 
 .text-dark {
-  color: #262626;
+  color: #22282a;
 }
 
 .text-black {
-  color: #1a1a1a;
+  color: #171b1c;
 }
 
 .bg-red {
@@ -699,21 +699,21 @@ input.radio {
 }
 
 .bg-light {
-  background-color: #e6e6e6;
+  background-color: #e3e7e8;
 }
 
 .bg-light-gray {
-  background-color: gray;
+  background-color: #73858c;
 }
 
 .bg-gray {
-  background-color: #333333;
+  background-color: #2e3538;
 }
 
 .bg-dark {
-  background-color: #262626;
+  background-color: #22282a;
 }
 
 .bg-black {
-  background-color: #1a1a1a;
+  background-color: #171b1c;
 }
