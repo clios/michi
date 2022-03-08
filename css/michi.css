@@ -629,3 +629,91 @@ label.radio:focus {
 input.radio {
   outline: none;
 }
+
+.text-red {
+  color: #df2020;
+}
+
+.text-orange {
+  color: #df9c20;
+}
+
+.text-yellow {
+  color: #dfdf20;
+}
+
+.text-green {
+  color: #20df20;
+}
+
+.text-blue {
+  color: #20a9df;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-light {
+  color: #e6e6e6;
+}
+
+.text-light-gray {
+  color: gray;
+}
+
+.text-gray {
+  color: #333333;
+}
+
+.text-dark {
+  color: #262626;
+}
+
+.text-black {
+  color: #1a1a1a;
+}
+
+.bg-red {
+  background-color: #df2020;
+}
+
+.bg-orange {
+  background-color: #df9c20;
+}
+
+.bg-yellow {
+  background-color: #dfdf20;
+}
+
+.bg-green {
+  background-color: #20df20;
+}
+
+.bg-blue {
+  background-color: #20a9df;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.bg-light {
+  background-color: #e6e6e6;
+}
+
+.bg-light-gray {
+  background-color: gray;
+}
+
+.bg-gray {
+  background-color: #333333;
+}
+
+.bg-dark {
+  background-color: #262626;
+}
+
+.bg-black {
+  background-color: #1a1a1a;
+}
