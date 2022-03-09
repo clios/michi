@@ -3,9 +3,8 @@
 label.radio {
   display: inline-block;
   padding: 0.4em 0.7em;
+  border-top: 1px solid $light-gray;
   font-size: 0.8rem;
-  border-top: 3.5px solid $light-gray;
-  border-bottom: 0.18125rem solid $light-gray;
   background-color: $light-gray;
   color: $white;
   outline: none;
