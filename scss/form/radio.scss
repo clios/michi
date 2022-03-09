@@ -8,6 +8,7 @@ label.radio {
   color: $white;
   outline: none;
   transition: all 200ms ease;
+  cursor: pointer;
   &:focus {
     border: 1px solid $light-gray;
     background-color: lighten($primary, 45%);

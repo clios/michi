@@ -528,6 +528,7 @@ body {
   color: white;
   outline: none;
   transition: all 200ms ease;
+  cursor: pointer;
   -webkit-appearance: none;
   -moz-appearance: textfield;
 }
@@ -545,6 +546,7 @@ body {
   color: white;
   outline: none;
   transition: all 200ms ease;
+  cursor: pointer;
   font-family: "Oxygen", "Fira Sans", "Roboto", "Droid Sans", "Helvetica", "Arial", sans-serif;
   font-size: 0.8rem;
 }
@@ -598,6 +600,7 @@ label.checkbox {
   color: white;
   outline: none;
   transition: all 200ms ease;
+  cursor: pointer;
 }
 label.checkbox:focus {
   border: 1px solid #73858c;
@@ -618,6 +621,7 @@ label.radio {
   color: white;
   outline: none;
   transition: all 200ms ease;
+  cursor: pointer;
 }
 label.radio:focus {
   border: 1px solid #73858c;
