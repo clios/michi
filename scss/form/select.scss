@@ -18,16 +18,17 @@
 
 select {
   display: block;
-  padding: 0.4rem 50px 0.4rem 10px;
-  border: 1px solid $light-gray;
+  padding: 0.4em 50px 0.4em 10px;
+  border: 0.15rem solid $light-gray;
   background-color: $light-gray;
   color: $white;
+  font-size: 0.8rem;
   outline: none;
   appearance: none;
   cursor: pointer;
   &:focus {
-    border: 1px solid $primary;
-    background-color: lighten($primary, 45%);
+    border: 0.15rem solid $light-gray;
+    background-color: lighten($light-gray, 45%);
     color: $black;
     transition: all 200ms ease;
   }
