@@ -2,6 +2,7 @@
   background-color: $dark;
   border-collapse: collapse;
   tr {
+    border-bottom: 1px solid $light-gray;
   }
   th,
   td {
