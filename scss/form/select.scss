@@ -27,7 +27,7 @@ select {
   appearance: none;
   cursor: pointer;
   &:focus {
-    border: 0.15rem solid $light-gray;
+    border: 0.15rem solid lighten($light-gray, 45%);
     background-color: lighten($light-gray, 45%);
     color: $black;
     transition: all 200ms ease;

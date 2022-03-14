@@ -12,7 +12,7 @@
     'Arial', sans-serif;
   font-size: 0.8rem;
   &:focus {
-    border: 1px solid $light-gray;
+    border: 1px solid lighten($primary, 45%);
     background-color: lighten($primary, 45%);
     color: $black;
     transition: all 200ms ease;

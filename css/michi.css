@@ -536,7 +536,7 @@ body {
   -moz-appearance: textfield;
 }
 .input:focus {
-  border: 0.15rem solid #73858c;
+  border: 0.15rem solid #e9f6fc;
   background-color: #e9f6fc;
   color: #171b1c;
   transition: all 200ms ease;
@@ -556,7 +556,7 @@ body {
   font-size: 0.8rem;
 }
 .textarea:focus {
-  border: 1px solid #73858c;
+  border: 1px solid #e9f6fc;
   background-color: #e9f6fc;
   color: #171b1c;
   transition: all 200ms ease;
@@ -592,7 +592,7 @@ select {
   cursor: pointer;
 }
 select:focus {
-  border: 0.15rem solid #73858c;
+  border: 0.15rem solid #f1f3f4;
   background-color: #f1f3f4;
   color: #171b1c;
   transition: all 200ms ease;

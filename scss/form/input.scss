@@ -13,8 +13,8 @@
   -webkit-appearance: none;
   -moz-appearance: textfield;
   &:focus {
-    border: 0.15rem solid $light-gray;
-    background-color: lighten($primary, 45%);
+    border: 0.15rem solid lighten($blue, 45%);
+    background-color: lighten($blue, 45%);
     color: $black;
     transition: all 200ms ease;
   }
