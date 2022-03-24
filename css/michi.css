@@ -617,9 +617,9 @@ label.checkbox:focus {
   color: #171b1c;
   transition: all 200ms ease;
 }
-
-input.checkbox {
+label.checkbox input[type=checkbox] {
   outline: none;
+  margin-right: 0.4em;
 }
 
 label.radio {

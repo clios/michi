@@ -15,8 +15,8 @@ label.checkbox {
     color: $black;
     transition: all 200ms ease;
   }
-}
-
-input.checkbox {
-  outline: none;
+  input[type='checkbox'] {
+    outline: none;
+    margin-right: 0.4em;
+  }
 }
