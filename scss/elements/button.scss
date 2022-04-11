@@ -58,6 +58,91 @@
   }
 }
 
+.button.is-red {
+  border: 0.15rem solid $red;
+  background-color: $red;
+  color: color-contrast($red);
+  &:hover,
+  &:focus {
+    border: 0.15rem solid lighten($red, 15%);
+    background-color: lighten($red, 15%);
+    color: color-contrast(lighten($red, 15%));
+  }
+  &:active {
+    border: 0.15rem solid darken($red, 10%);
+    background-color: darken($red, 10%);
+    color: color-contrast(darken($red, 10%));
+  }
+}
+
+.button.is-orange {
+  border: 0.15rem solid $orange;
+  background-color: $orange;
+  color: color-contrast($orange);
+  &:hover,
+  &:focus {
+    border: 0.15rem solid lighten($orange, 15%);
+    background-color: lighten($orange, 15%);
+    color: color-contrast(lighten($orange, 15%));
+  }
+  &:active {
+    border: 0.15rem solid darken($orange, 10%);
+    background-color: darken($orange, 10%);
+    color: color-contrast(darken($orange, 10%));
+  }
+}
+
+.button.is-yellow {
+  border: 0.15rem solid $yellow;
+  background-color: $yellow;
+  color: color-contrast($yellow);
+  &:hover,
+  &:focus {
+    border: 0.15rem solid lighten($yellow, 15%);
+    background-color: lighten($yellow, 15%);
+    color: color-contrast(lighten($yellow, 15%));
+  }
+  &:active {
+    border: 0.15rem solid darken($yellow, 10%);
+    background-color: darken($yellow, 10%);
+    color: color-contrast(darken($yellow, 10%));
+  }
+}
+
+.button.is-green {
+  border: 0.15rem solid $green;
+  background-color: $green;
+  color: color-contrast($green);
+  &:hover,
+  &:focus {
+    border: 0.15rem solid lighten($green, 15%);
+    background-color: lighten($green, 15%);
+    color: color-contrast(lighten($green, 15%));
+  }
+  &:active {
+    border: 0.15rem solid darken($green, 10%);
+    background-color: darken($green, 10%);
+    color: color-contrast(darken($green, 10%));
+  }
+}
+
+.button.is-blue {
+  border: 0.15rem solid $blue;
+  background-color: $blue;
+  color: color-contrast($blue);
+  &:hover,
+  &:focus {
+    border: 0.15rem solid lighten($blue, 15%);
+    background-color: lighten($blue, 15%);
+    color: color-contrast(lighten($blue, 15%));
+  }
+  &:active {
+    border: 0.15rem solid darken($blue, 10%);
+    background-color: darken($blue, 10%);
+    color: color-contrast(darken($blue, 10%));
+  }
+}
+
 // Sizes
 
 .button.is-small {
