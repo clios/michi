@@ -33,3 +33,7 @@ select {
     transition: all 200ms ease;
   }
 }
+
+select:disabled {
+  cursor: not-allowed;
+}

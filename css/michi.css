@@ -407,6 +407,86 @@ body {
   color: white;
 }
 
+.button.is-red {
+  border: 0.15rem solid #df2020;
+  background-color: #df2020;
+  color: white;
+}
+.button.is-red:hover, .button.is-red:focus {
+  border: 0.15rem solid #e96363;
+  background-color: #e96363;
+  color: black;
+}
+.button.is-red:active {
+  border: 0.15rem solid #b31a1a;
+  background-color: #b31a1a;
+  color: white;
+}
+
+.button.is-orange {
+  border: 0.15rem solid #df9c20;
+  background-color: #df9c20;
+  color: black;
+}
+.button.is-orange:hover, .button.is-orange:focus {
+  border: 0.15rem solid #e9ba63;
+  background-color: #e9ba63;
+  color: black;
+}
+.button.is-orange:active {
+  border: 0.15rem solid #b37d1a;
+  background-color: #b37d1a;
+  color: black;
+}
+
+.button.is-yellow {
+  border: 0.15rem solid #dfdf20;
+  background-color: #dfdf20;
+  color: black;
+}
+.button.is-yellow:hover, .button.is-yellow:focus {
+  border: 0.15rem solid #e9e963;
+  background-color: #e9e963;
+  color: black;
+}
+.button.is-yellow:active {
+  border: 0.15rem solid #b3b31a;
+  background-color: #b3b31a;
+  color: black;
+}
+
+.button.is-green {
+  border: 0.15rem solid #20df20;
+  background-color: #20df20;
+  color: black;
+}
+.button.is-green:hover, .button.is-green:focus {
+  border: 0.15rem solid #63e963;
+  background-color: #63e963;
+  color: black;
+}
+.button.is-green:active {
+  border: 0.15rem solid #1ab31a;
+  background-color: #1ab31a;
+  color: white;
+}
+
+.button.is-blue {
+  border: 0.15rem solid #20a9df;
+  background-color: #20a9df;
+  color: black;
+}
+.button.is-blue:hover, .button.is-blue:focus {
+  border: 0.15rem solid #63c3e9;
+  background-color: #63c3e9;
+  color: black;
+}
+.button.is-blue:active {
+  border: 0.15rem solid #1a87b3;
+  background-color: #1a87b3;
+  color: white;
+}
+
 .button.is-small {
   font-size: 0.7rem;
 }
@@ -545,6 +625,10 @@ body {
   transition: all 200ms ease;
 }
 
+.input:disabled {
+  cursor: not-allowed;
+}
+
 .textarea {
   padding: 0.4rem 0.7rem;
   border: 1px solid #73858c;
@@ -563,6 +647,10 @@ body {
   background-color: #e9f6fc;
   color: #171b1c;
   transition: all 200ms ease;
+}
+
+.textarea:disabled {
+  cursor: not-allowed;
 }
 
 .select {
@@ -599,6 +687,10 @@ select:focus {
   background-color: #f1f3f4;
   color: #171b1c;
   transition: all 200ms ease;
+}
+
+select:disabled {
+  cursor: not-allowed;
 }
 
 label.checkbox {

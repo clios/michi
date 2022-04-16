@@ -19,3 +19,7 @@
     transition: all 200ms ease;
   }
 }
+
+.input:disabled {
+  cursor: not-allowed;
+}
