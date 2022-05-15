@@ -10,13 +10,11 @@ label.checkbox {
   outline: none;
   transition: all 200ms ease;
   cursor: pointer;
-  &:focus {
-    background-color: lighten($primary, 45%);
-    color: $black;
-    transition: all 200ms ease;
-  }
   input[type='checkbox'] {
     outline: none;
     margin-right: 0.4em;
+  }
+  input[type='checkbox']:focus {
+    outline: 1px solid $white;
   }
 }

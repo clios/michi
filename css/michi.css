@@ -704,14 +704,12 @@ label.checkbox {
   transition: all 200ms ease;
   cursor: pointer;
 }
-label.checkbox:focus {
-  background-color: #e9f6fc;
-  color: #171b1c;
-  transition: all 200ms ease;
-}
 label.checkbox input[type=checkbox] {
   outline: none;
   margin-right: 0.4em;
+}
+label.checkbox input[type=checkbox]:focus {
+  outline: 1px solid white;
 }
 
 label.radio {
@@ -725,10 +723,8 @@ label.radio {
   transition: all 200ms ease;
   cursor: pointer;
 }
-label.radio:focus {
-  background-color: #f1f3f4;
-  color: #171b1c;
-  transition: all 200ms ease;
+label.radio input[type=radio]:focus {
+  outline: 1px solid white;
 }
 
 input.radio {

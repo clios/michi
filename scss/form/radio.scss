@@ -10,10 +10,8 @@ label.radio {
   outline: none;
   transition: all 200ms ease;
   cursor: pointer;
-  &:focus {
-    background-color: lighten($light-gray, 45%);
-    color: $black;
-    transition: all 200ms ease;
+  input[type='radio']:focus {
+    outline: 1px solid $white;
   }
 }
 
