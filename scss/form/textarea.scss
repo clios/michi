@@ -11,8 +11,8 @@
   font-family: 'Oxygen', 'Fira Sans', 'Roboto', 'Droid Sans', 'Helvetica', 'Arial', sans-serif;
   font-size: 0.8rem;
   &:focus {
-    border: 1px solid lighten($primary, 45%);
-    background-color: lighten($primary, 45%);
+    border: 1px solid lighten($blue, 45%);
+    background-color: lighten($blue, 45%);
     color: $black;
     transition: all 200ms ease;
   }
