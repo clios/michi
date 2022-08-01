@@ -694,6 +694,10 @@ select:disabled {
 }
 
 label.checkbox {
+  display: flex;
+  align-items: center;
+  width: min-content;
+  white-space: nowrap;
   padding: 0.4em 0.7em;
   border-top: 3.5px solid #73858c;
   border-bottom: 0.18125rem solid #73858c;

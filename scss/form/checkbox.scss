@@ -1,6 +1,10 @@
 @use 'sass:color';
 
 label.checkbox {
+  display: flex;
+  align-items: center;
+  width: min-content;
+  white-space: nowrap;
   padding: 0.4em 0.7em;
   border-top: 3.5px solid $light-gray;
   border-bottom: 0.18125rem solid $light-gray;
